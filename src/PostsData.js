@@ -4,10 +4,10 @@ var posts = [
             "user": {
                 "id": 1,
                 "username": "Kimmo",
-                "profileImages": "img/p1.jpg"
+                "profileImages": "img/max.png"
             },
-            "image": "img/p1.jpg",
-            "imageThumb": "img/p1.jpg",
+            "image": "img/max.png",
+            "imageThumb": "img/max.png",
             "likes": 1320,
             "caption": "my new style",
             "comments": [
