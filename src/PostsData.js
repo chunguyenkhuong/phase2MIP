@@ -3,33 +3,31 @@ var posts = [
             "id": 0,
             "user": {
                 "id": 1,
-                "username": "dtrump",
-                "profileImageSmall": "http://core0.staticworld.net/images/article/2015/11/111915blog-donald-trump-100629006-primary.idge.jpg"
+                "username": "Kimmo",
+                "profileImages": "img/p1.jpg"
             },
-            "image": "http://media1.fdncms.com/sacurrent/imager/u/original/2513252/donald_trump4.jpg",
-            "imageThumbnail": "http://media1.fdncms.com/sacurrent/imager/u/original/2513252/donald_trump4.jpg",
-            "likes": 892,
-            "caption": "Always winning #elections",
-            "tags": ["elections"],
+            "image": "img/p2.jpg",
+            "imageThumb": "img/p2.jpg",
+            "likes": 1320,
+            "caption": "my new style",
             "comments": [
                 {
                     "id": 0,
                     "user": {
                         "id": 2,
-                        "username": "POTUS"
+                        "username": "Pyhtio"
                     },
-                    "comment": "You're never going to make it don #losing",
+                    "comment": "nothing",
                     "userRefs": [],
-                    "tags": ["losing"]
                 },
                 {
                     "id": 1,
                     "user": {
                         "id": 3,
-                        "username": "HillaryC"
+                        "username": "Tapio"
                     },
-                    "comment": "Damn right @POTUS",
-                    "userRefs": ["POTUS"],
+                    "comment": "thanks",
+                    "userRefs": ["Kimmo"],
                     "tags": []
                 }
             ]
@@ -38,14 +36,13 @@ var posts = [
                 "id": 1,
             "user": {
                 "id": 2,
-                "username": "HillaryC",
-                "profileImageSmall": "https://pbs.twimg.com/profile_images/750300510264107008/G8-PA5KA.jpg"
+                "username": "Vihtori",
+                "profileImages": "img/p4.jpg"
             },
-            "image": "http://media1.fdncms.com/sacurrent/imager/u/original/2513252/donald_trump4.jpg",
-            "imageThumbnail": "http://media1.fdncms.com/sacurrent/imager/u/original/2513252/donald_trump4.jpg",
-            "likes": 1100,
-            "caption": "Loser #elections",
-            "tags": ["elections"],
+            "image": "img/p5.jpg",
+            "imageThumb": "img/p5.jpg",
+            "likes": 210,
+            "caption": "I am legend",
             "comments": [
 
             ]
