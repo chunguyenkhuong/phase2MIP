@@ -4,10 +4,10 @@ var posts = [
             "user": {
                 "id": 1,
                 "username": "Kimmo",
-                "profileImages": "phase2MIP/img/p1.jpg"
+                "profileImages": "ionic/phase2MIP/img/p1.jpg"
             },
-            "image": "phase2MIP/img/p2.jpg",
-            "imageThumb": "phase2MIP/img/p2.jpg",
+            "image": "ionic/phase2MIP/img/p2.jpg",
+            "imageThumb": "ionic/phase2MIP/img/p2.jpg",
             "likes": 1320,
             "caption": "my new style",
             "comments": [
@@ -37,10 +37,10 @@ var posts = [
             "user": {
                 "id": 2,
                 "username": "Vihtori",
-                "profileImages": "phase2MIP/img/p4.jpg"
+                "profileImages": "ionic/phase2MIP/img/p4.jpg"
             },
-            "image": "phase2MIP/img/p5.jpg",
-            "imageThumb": "phase2MIP/img/p5.jpg",
+            "image": "ionic/phase2MIP/img/p5.jpg",
+            "imageThumb": "ionic/phase2MIP/img/p5.jpg",
             "likes": 210,
             "caption": "I am legend",
             "comments": [
