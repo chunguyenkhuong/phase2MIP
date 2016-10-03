@@ -37,10 +37,10 @@ var posts = [
             "user": {
                 "id": 2,
                 "username": "Vihtori",
-                "profileImages": "img/p4.jpg"
+                "profileImages": "img/ben.png"
             },
-            "image": "img/p4.jpg",
-            "imageThumb": "img/p4.jpg",
+            "image": "img/ben.png",
+            "imageThumb": "img/ben.png",
             "likes": 210,
             "caption": "I am legend",
             "comments": [
