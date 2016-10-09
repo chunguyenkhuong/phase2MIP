@@ -1,11 +1,13 @@
 var express = require('express');
 var posts = require('./routes/Post.js');
+var users = require('./routes/User.js');
 var cors = require('cors');
 var app = express();
 
 app.set('port', (process.env.PORT || 80));
 app.use(cors());
 app.use('/', posts);
+app.use('/', users);
 app.get('/', function(req, res) {
 	res.send("Hello world");
 });
