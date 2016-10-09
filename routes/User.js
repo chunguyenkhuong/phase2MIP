@@ -23,7 +23,7 @@ function UserLogin(req,res)
 
 router.route('/users').get(getAllUser).post(getAllUser);
 
-router.route('/users/:username').get(getAllUser);
+router.route('/users/:username').get(getUserByUsername);
 
 router.route('/users/create').post(addNewUser);
 router.route('/users/login').post(UserLogin);
