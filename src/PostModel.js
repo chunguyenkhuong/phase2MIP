@@ -8,7 +8,7 @@ exports.getAllPost = function(res)
 
 db.serialize(function() {
 
-  db.each("SELECT * FROM post ORDER BY id ASC", function(err, row) {
+  db.each("SELECT * FROM post ORDER BY id DESC", function(err, row) {
       tests.push(row);
   }, function() { // this callback is executed when the query completed
      res.json(tests);
