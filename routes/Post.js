@@ -1,12 +1,25 @@
-var PostsData = require('../src/PostsData');
+var PostModel = require('../src/PostModel.js');
 var express = require('express');
 var router = express.Router();
 
-function getPosts(req, res){
-	res.json(PostsData.getPosts());
+function getAllPost(req, res){
+  PostModel.getAllPost(res);
 }
 
-router.route('/posts')
-	.get(getPosts);
+function getPostByUserId(req, res)
+{
+	PostModel.getPostByUserId(req.params.user_id, res);
+}
+
+function addNewPost(req,res)
+{
+  UserModel.addPost(req, res);
+}
+
+router.route('/posts').get(getAllPost).post(getAllPost);
+
+router.route('/posts/:user_id').get(getPostByUserId);
+
+router.route('/posts/create').post(addNewPost);
 
 module.exports = router;
