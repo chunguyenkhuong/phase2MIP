@@ -13,7 +13,7 @@ function getPostByUserId(req, res)
 
 function addNewPost(req,res)
 {
-  UserModel.addPost(req, res);
+  PostModel.addPost(req, res);
 }
 
 router.route('/posts').get(getAllPost).post(getAllPost);
