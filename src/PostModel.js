@@ -16,12 +16,12 @@ db.serialize(function() {
 });
 }
 
-exports.getPostByUserId= function(user_id,res){
+exports.getPostByUsername= function(username,res){
   var tests = [];
 
 db.serialize(function() {
 
-  db.each("SELECT * FROM user WHERE post_user_id = $post_user_id ORDER BY id ASC",[user_id],function(err, row) {
+  db.each("SELECT * FROM user WHERE post_user_id IN (SELECT id FROM user WHERE username = $username) ORDER BY id ASC",[username],function(err, row) {
       tests.push(row);
   }, function() { // this callback is executed when the query completed
      res.json(tests);

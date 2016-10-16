@@ -6,9 +6,9 @@ function getAllPost(req, res){
   PostModel.getAllPost(res);
 }
 
-function getPostByUserId(req, res)
+function getPostByUsername(req, res)
 {
-	PostModel.getPostByUserId(req.params.user_id, res);
+	PostModel.getPostByUsername(req.params.username, res);
 }
 
 function addNewPost(req,res)
@@ -18,7 +18,7 @@ function addNewPost(req,res)
 
 router.route('/posts').get(getAllPost).post(getAllPost);
 
-router.route('/posts/:user_id').get(getPostByUserId);
+router.route('/posts/:username').get(getPostByUsername);
 
 router.route('/posts/create').post(addNewPost);
 
