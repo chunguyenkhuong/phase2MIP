@@ -16,6 +16,19 @@ db.serialize(function() {
 });
 }
 
+exports.getPostByTag= function(tag,res){
+  var tests = [];
+
+db.serialize(function() {
+
+  db.each("SELECT * FROM post WHERE tag = $username ORDER BY id ASC",[tag],function(err, row) {
+      tests.push(row);
+  }, function() { // this callback is executed when the query completed
+     res.json(tests);
+  });
+});
+}
+
 exports.getPostByUsername= function(username,res){
   var tests = [];
 
